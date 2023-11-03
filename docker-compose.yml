@@ -1,0 +1,9 @@
+services:
+  server_fast:
+    build: ../part_5
+
+  proxy:
+  image: nginx
+    build: .
+    ports:
+      - 80:8080
